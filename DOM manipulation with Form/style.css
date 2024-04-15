@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #76d3f0;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.main {
+  background: transparent;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border: 2px solid rgba(255, 255, 255,.2);
+  color: #fff;
+  border-radius: 10px;
+  margin: 2vw;
+  padding: 2vw 2vw;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vw;
+  margin: 0.5vw;
+}
+input {
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 0.5vw;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+  padding: 10px 45px 10px 15px;
+  color: #fff;
+}
+input::placeholder {
+  color: #fff;
+  font-size: 15px;
+  padding: 15px;
+}
+textarea {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10px;
+  margin: 0.5vw;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+}
+textarea::placeholder {
+  color: #fff;
+  font-size: 15px;
+  padding: 15px;
+}
+.buttonstyle {
+  background-color: #fff;
+  color: #333;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+}
+.buttonstyle:hover {
+  background-color: transparent;
+}
+p {
+  font-size: 1.3vw;
+}
+h1{
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+.table {
+  color: #fff;
+  width: 60vw;
+}
+
+.table thead th {
+  color: #fff;
+  background-color: transparent; 
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.table tbody td {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent; 
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .table {
+    width: 100%;
+  }
+
+  .table thead th,
+  .table tbody td {
+    display: block; 
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  
+
+}
+
+
